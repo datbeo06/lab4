@@ -1,0 +1,98 @@
+/*
+filename: lab04.css
+author: [your name]
+created: 2026-03-26
+last modified: 2026-03-26
+description: Stylesheet for lab04.html
+*/
+
+/* === UNIVERSAL SELECTOR === */
+* {
+    font-family: calibri, sans-serif;
+    color: #2F4F4F;
+}
+
+/* === ELEMENT SELECTORS === */
+
+/* Step 3: h1 - purple, double size, bold */
+h1 {
+    color: purple;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* h2 - RGB teal, bold, 1.5em */
+h2 {
+    color: rgb(0, 128, 128);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Table border */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* === GROUP SELECTORS === */
+
+/* aside and footer - italic */
+aside, footer {
+    font-style: italic;
+}
+
+/* All headings - arial font */
+h1, h2, h3 {
+    font-family: arial, sans-serif;
+}
+
+/* === ID SELECTORS === */
+
+/* Centre-align the Images heading */
+#images {
+    text-align: center;
+}
+
+/* Headings h3 - red colour */
+#headings-title {
+    color: red;
+}
+
+/* === CLASS SELECTORS === */
+
+/* Special characters - dark orange, bold */
+.special {
+    color: darkorange;
+    font-weight: bold;
+}
+
+/* Month table headings - right aligned */
+.month-heading {
+    text-align: right;
+}
+
+/* === CONTEXTUAL SELECTORS === */
+
+/* Nav links - no underline, padding, border */
+nav a {
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid #ccc;
+}
+
+/* Unordered lists nested inside ordered lists - square bullets */
+ol ul {
+    list-style-type: square;
+}
+
+/* === PSEUDO CLASSES === */
+
+/* aside disappears on hover */
+aside:hover {
+    display: none;
+}
+
+/* Nav links on hover - light blue background, dark blue border */
+nav a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
